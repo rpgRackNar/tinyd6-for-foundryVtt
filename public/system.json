@@ -1,0 +1,26 @@
+{
+  "name": "tinyD6",
+  "title": "TinyD6",
+  "description": "This ",
+  "version": "0.1.0",
+  "author": "JD stillday, rpgRackNar",
+  "minimumCoreVersion": "0.8.8",
+  "compatibleCoreVersion": "0.8.9",
+  "scripts": [
+    "main.mjs.iife.js"
+  ],
+  "styles": [
+    "style.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "socket": true,
+  "url": "",
+  "manifest": "",
+  "download": ""
+}

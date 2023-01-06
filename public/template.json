@@ -1,0 +1,60 @@
+{
+	"Actor": {
+		"types": [
+			"hero",
+			"npc"
+		],
+		"templates": {
+			"commonStats": {
+				"name": "",
+				"wounds": {
+					"value": 12,
+					"max": 12
+				},
+				"traits": {},
+				"description": ""
+			},
+			"causesCorruption": {
+				"corruptionTest": "standard"
+			},
+			"namedCharacter": {
+				"heritage": {},
+				"people": "",
+				"homeland": "",
+				"age": "",
+				"eyes": "",
+				"hair": "",
+				"familyTrade": "",
+				"belief": "",
+				"xp": {
+					"max": 0,
+					"spent": 0
+				},
+				"advancement":{
+					"value": 0,
+					"max": 3
+				},
+				"proficiencies": {
+					"lightMelee": false,
+					"heavyMelee": false,
+					"lightRanged": false,
+					"heavyRanged": false,
+					"masteredWeapons": ""
+				},
+				"gear": {}
+			},
+			"hero": {
+				"corruptionThreshold": {
+					"value": 6,
+					"max": 6
+				}
+			}
+		},
+		"hero": {
+			"templates": [ "commonStats", "namedCharacter", "hero" ]
+		},
+		"npc": {
+			"templates": [ "commonStats", "causesCorruption" ]
+		}
+	}
+}
