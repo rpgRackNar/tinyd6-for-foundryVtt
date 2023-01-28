@@ -1,17 +1,26 @@
 {
-  "name": "tinyD6",
-  "title": "TinyD6",
-  "description": "This ",
-  "version": "0.1.0",
-  "author": "JD stillday, rpgRackNar",
-  "minimumCoreVersion": "0.8.8",
+  "authors": [
+    {
+      "discord": "",
+      "email": "",
+      "name": "JD stillday",
+      "url": ""
+    },
+    {
+      "discord": "RackNar#7343",
+      "email": "rpg@ragnar.de",
+      "name": "RackNar",
+      "url": "racknar.de"
+    }
+  ],
+  "compatibility": {
+    "maximum": 10,
+    "minimum": 9,
+    "verified": "10.291"
+  },
   "compatibleCoreVersion": "0.8.9",
-  "scripts": [
-    "main.mjs.iife.js"
-  ],
-  "styles": [
-    "style.css"
-  ],
+  "description": "This ",
+  "download": "",
   "languages": [
     {
       "lang": "en",
@@ -19,8 +28,16 @@
       "path": "lang/en.json"
     }
   ],
-  "socket": true,
-  "url": "",
   "manifest": "",
-  "download": ""
+  "id": "tinyD6",
+  "scripts": [
+    "main.mjs.iife.js"
+  ],
+  "socket": true,
+  "styles": [
+    "style.css"
+  ],
+  "title": "TinyD6",
+  "url": "",
+  "version": "0.1.0"
 }
