@@ -1,22 +1,19 @@
-// .storybook/main.js|cjs|ts
-
-const { mergeConfig } = require('vite');
-
+const path = require('path');
 module.exports = {
-  stories: ['../stories/**/*.stories.mdx', '../stories/**/*.stories.@(js|jsx|ts|tsx)'],
-  addons: ['@storybook/addon-links', '@storybook/addon-essentials'],
-  core: {
-    builder: '@storybook/builder-vite',
+  'stories': [
+    '../src/**/*.mdx',
+    '../src/**/*.stories.@(js|jsx|ts|tsx|svelte)',
+  ],
+  'addons': [
+    '@storybook/addon-links',
+    '@storybook/addon-essentials',
+    '@storybook/addon-interactions',
+  ],
+  'framework': {
+    'name': '@storybook/svelte-vite',
+    'options': {},
   },
-  async viteFinal(config) {
-    // Merge custom configuration into the default config
-    return mergeConfig(config, {
-      // Use the same "resolve" configuration as your app
-      resolve: (await import('../vite.config.js')).default.resolve,
-      // Add dependencies to pre-optimization
-      optimizeDeps: {
-        include: ['storybook-dark-mode'],
-      },
-    });
+  'docs': {
+    'autodocs': 'tag',
   },
 };

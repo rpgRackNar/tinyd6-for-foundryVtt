@@ -1,3 +1,6 @@
 <script>
   window.global = window;
+
+  // Workaround for global game object
+  const game = {i18n: {localize: (str) => str}};
 </script>

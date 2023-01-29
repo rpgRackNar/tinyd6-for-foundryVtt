@@ -5,4 +5,4 @@
 </script>
 
 <label for="name">{localize("NAME")}</label>
-<input type="text" name="name" value="{actor.name}"/>
+<input type="text" name="name" value="{actor?.name || ''}"/>
